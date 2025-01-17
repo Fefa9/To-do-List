@@ -1,5 +1,6 @@
 <?
-include 'modeles/modele.php';
+
+include 'modele/modele.php';
 
 echo "Fichier controleur.inc.php inclus avec succès";
 

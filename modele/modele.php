@@ -1,5 +1,7 @@
 <?php
 
+
+
     function getConnexion(){
         // extraction des parametres de connexion
         $file='param.ini';
@@ -66,6 +68,20 @@
         return($row);
     }
 
+    function control_form($intitule,$jour) {
+        $tErreurs = [];
     
+        if (empty(trim($intitule))) {
+            $tErreurs["intitule"] = "Reinseigner une tâche";
+        }
+        if (empty($jour)) {
+            $tErreurs["jour"] = "Date requise ";    
+       
+    
+        }
+         
+        return $tErreurs;
+    
+    }
 
 ?>

@@ -1,6 +1,6 @@
 <?php
- require_once 'modeles/modele.php';
- require_once 'controleur/controleur.inc.php';
+ require_once 'modele/modele.php';
+ //require_once 'controleur/controleur.inc.php';
 
 
 
@@ -35,11 +35,7 @@
 //         echo $erreur->getMessage();
 //     }
 
-if (function_exists('control_form')) {
-  control_form();
-} else {
-  echo "La fonction control_form() n'est pas définie.";
-}
+
 
   try {
         if(!isset($_GET["action"])){
